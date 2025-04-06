@@ -89,3 +89,24 @@ Dispozitivul este structurat în jurul modulului **ESP32-C3-WROOM**, care gestio
 | D1 | USBLC6-2SC6Y | [USBLC6-2SC6Y](https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part/?ref=snap) |
 | U1 | W25Q512JVEIQ | [W25Q512JVEIQ](https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=snap) |
 | IC4 | XC6220A331MR-G | [XC6220A331MR-G](N/A) |
+
+## Alocare pini ESP32-C3
+
+| Pin ESP32-C3 | Componentă  | Funcție / Motiv                     |
+|--------------|-------------|-------------------------------------|
+| GPIO1        | BME680      | I2C - SDA                           |
+| GPIO2        | BME680      | I2C - SCL                           |
+| GPIO3        | PMSA003     | UART RX pentru senzor PM           |
+| GPIO4        | SD Card     | SPI Chip Select (CS)               |
+| GPIO5        | E-Ink       | Data/Command                       |
+| GPIO6        | E-Ink & SD  | SPI Clock (SCK)                    |
+| GPIO7        | E-Ink & SD  | SPI MOSI (date)                    |
+| GPIO8        | Buton 1     | Control meniu / pagină             |
+| GPIO9        | Buton 2     | Control meniu / pagină             |
+| GPIO10       | E-Ink       | SPI Chip Select (CS)               |
+| GPIO11       | Flash ext.  | CS rezervat, neutilizat momentan   |
+| GPIO12       | USB         | USB D-                             |
+| GPIO13       | USB         | USB D+                             |
+| GPIO18       | MH-Z19B     | UART TX pentru senzor CO2          |
+| GPIO19       | Buton 3     | Confirmare / acțiune suplimentară  |
+
